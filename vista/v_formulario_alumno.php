@@ -11,7 +11,7 @@
             <input type="text" name="nombre">
             <br/>
             <label for="correo">Correo del alumno: </label>
-            <input type="text" name="correo" size="100">
+            <input type="text" name="correo">
             <br/>
             <label for="pw">Contraseña del alumno: </label>
             <input type="password" name="pw">
