@@ -6,14 +6,15 @@
     $usuario= $objAdmin->iniciar_sesion();
 
     if($_SESSION['perfil']==='A'){
+        
         include('vista/v_menuAdmin.php');
+
+    }else {
+        if($_SESSION['perfil']==='P'){
+            include('vista/v_menuProfesor.php');
+        }else {
+            include('vista/v_menuAlum.php');
+            $_SESSION["mensaje"]="Los alumnos no pueden acceder aqui";
+        }
     }
-    if($_SESSION['perfil']==='P'){
-        include('vista/v_menuProf.php');
-    }
-    if($_SESSION['perfil']==='L'){
-        include('vista/v_menuAlum.php');
-        $_SESSION["mensaje"]="Los alumnos no pueden acceder aqui";
-    }
-    
 ?>

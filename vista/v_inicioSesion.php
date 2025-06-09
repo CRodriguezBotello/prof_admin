@@ -15,7 +15,7 @@
             <input type="password" name="pw">
             <br/>
             <input type="submit" value="ENVIAR">
-            <input type="reset" value="LIMPIAR">
+            <input type="reset" value="REINICIAR">
         </form>
     </body>
 </html>
