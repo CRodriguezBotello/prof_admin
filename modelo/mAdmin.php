@@ -24,7 +24,7 @@
             return $this->mensaje;
         }
 
-         public function iniciar_sesion($correo,$pw){
+         public function iniciar_sesion($correo){
             $sql="SELECT * FROM usuarios WHERE correo='$correo'";
 
             $resultado=$this->conexion->query($sql);

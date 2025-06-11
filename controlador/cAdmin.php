@@ -50,7 +50,7 @@
                 if(isset($_POST['pw']) && !empty($_POST['pw'])){
                     $this->pw=$_POST['pw'];
                     $objAdmin=new MAdmin();
-                    $usuario=$objAdmin->iniciar_sesion($this->correo,$this->pw);
+                    $usuario=$objAdmin->iniciar_sesion($this->correo);
 
                     if (password_verify($this->pw, $usuario['password'])) {
                         $this->mensaje = "Inicio de sesión correcto";
